@@ -1,6 +1,6 @@
 let fahrenheit = prompt("Please enter the Fahrenheit, convert into Celsius?");
 function convertToCelius(fahrenheit) {
-  return ((fahrenheit - 32) * 5) / 9;
+  return Math.round(((fahrenheit - 32) * 5) / 9);
 }
 
 function describeTemperature(fahrenheit) {
@@ -16,7 +16,8 @@ function describeTemperature(fahrenheit) {
     description =
       "When visit Vegas in July, you feel this temperature even in the night!";
   } else if (celsius >= 40) {
-    description = "When you put raw egg outside, it can cook itself.";
+    description =
+      "When you put a raw egg outside… it starts cooking itself like, No chef needed!";
   } else {
     description = "Only Alien can handle this temperature!";
   }
